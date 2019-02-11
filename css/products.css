@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+/*************************************************************/
+/*img gallery*/
+.product-container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  position: relative;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+/**************************************************************************/
+/***social media icons*/
+.social{
+	color:#fff;
+	border-radius: 50%;
+	background-color: #333;
+	padding:5px;
+	opacity: .6;
+}
+.social:hover{opacity: 1}
+/************************************************************************/
+/*buy button*/
+.buy-link-container .col,.product-butt{
+	      color:#fff;
+	      background-color:#03a367; 
+	      border: 1px solid #f3dede;
+          border-bottom-left-radius: 10px;
+	      border-bottom-right-radius: 10px;
+	      height: 50px;
+}
+.buy-link{
+	margin: 10px;
+	
+	color:#fff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 150%;
+	font-family:monospace
+}
+/************************************************************************/
+/*more from store*/
+
+.img-store{
+	border: 1px solid #fff;
+	border-radius: 15%;}
+.imo-pro{background-color:#e8e8ea;position: relative;}
+.pro-plus{position: absolute;
+    bottom:30%;
+	background-color: #fff;
+	border-radius: 50%;
+	right: 45%;
+	left: auto;
+	opacity: .6;
+}
+/*******************************************************************/
+/*description */
+.description{opacity: 1 !important;}
+.nav-tabs .nav-link {
+    color:#333 !important;
+}
+
+.nav-link.active {
+    color: red !important;
+    border-color: #fff #fff red !important;
+	font-weight: bold !important;
+	border-bottom: 3px solid red !important;
+}
+/************************************************************************/
+/*buy button*/
+.add-comment{display:inline-block;
+	     height: 60%;
+         border-bottom-left-radius: 20px;
+		 border-bottom-right-radius: 20px;
+		 border-top-left-radius: 20px;
+		 border-top-right-radius: 20px;
+}
+.comment{font-size: 12px;
+	     background-color: #f7f7f7;
+	     padding: 10px;
+         border:1px solid #f7f7f7;
+		 border-bottom-left-radius: 20px;
+		 border-bottom-right-radius: 20px;
+		 border-top-left-radius: 20px;
+		 border-top-right-radius: 20px;

@@ -1,0 +1,1999 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>kikin</title>
+<link rel="icon" type="image/png" href="imgs/title.png" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="css/bootstrap.min.css">    
+<link rel="stylesheet" href="css/bootstrap.css">    
+<link rel="stylesheet" href="css/owl.theme.default.css"> 
+<link rel="stylesheet" href="css/owl.carousel.min.css">    
+<link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+<body>
+ <!--first navigation -->
+	
+	
+	
+	<nav class="navbar navbar-expand-lg navbar-light  justify-content-between fixed-top-md bg-light">
+           
+<!--logo--><a class="navbar-brand" href="#"><img src="imgs/logo.png"></a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+         </button>
+  
+		
+		
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo03"><!--container for nav items-->
+		  
+        <!--search engine--->
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+           <li class="nav-item  ">
+               <div class="input-group search-container">
+				   <!--input search text-->
+				   <input type="hidden" name="search_param" value="all" id="search_param">
+                   <input type="text" class="form-control search butt" name="x" placeholder="Search items...">
+                	<span class="input-group-btn">
+                    	<button class="btn butt" type="button">
+							<i class="fas fa-search mr-2"></i>
+						</button>
+                	</span>
+					
+                    <select class="selectpicker list-search butt" role="menu" >
+                      <option><a href="#">All catagories</a></option>
+                      <option><a href="#">Women</a></option>
+                      <option><a href="#">Kids</a></option>
+                      <option><a href="#">Man</a></option>
+                      <option><a href="#">Gadgets</a></option>
+					  <option><a href="#">Home</a></option>
+                      <option><a href="#">Tv&amp;video</a></option>
+                      <option><a href="#">Art</a></option>
+                      <option><a href="#">Pets</a></option>
+                      
+                    </select>
+				
+                </div>
+                
+            
+
+			</li>
+		  </ul>
+	<!--end of search ----------------------------------------------------->
+		  
+		  
+		  
+
+	<!--quick links-------------------------------------------------------->  
+	  <ul class="navbar-nav mr-auto mt-2 mt-lg-0 link right" >
+      
+	<!--exist all the time "live feed"-->
+		 <li class="nav-item">
+        	<a class="nav-link mr-lg-5 font-weight-bold" href="live%20feeds.html">Live Feed</a>
+         </li>
+		  
+		  <!--exist == login refers to lang& currency-->
+		  <li class="nav-item align-self-center ">
+        	<select class="selectpicker butt lang-container" data-width="fit">
+                <option>En | CAD</option>
+                <option>AR | EG</option>
+             </select>
+           </li>
+		 
+		  <!--exist=log in refers to profile-->
+		 <li class="nav-item" >
+        	<a class="nav-link" href="profile.html"><i class="far fa-user"></i></a>
+         </li>
+		  
+		 <!--exist=log in refers to notifications-->
+         <li class="nav-item dropdown " >
+        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <i class="far fa-bell"></i>
+			</a>
+        
+	    <div class="dropdown-menu dropdown-menu-center center-block text-center " aria-labelledby="navbarDropdown" >
+          
+          <a class="dropdown-item  " href="profile.html"><!--notification link-->
+			  <img src="imgs/girl.png" class="rounded-circle img-fluid">
+			  <a href="#"> Notification Name</a><!---->
+			  <p>The standard Lorem Ipsum passage, used since the 1500s</p>
+		  </a>
+	  <div class="dropdown-divider"></div><!--separate noti-->
+          <a class="dropdown-item " href="#"><!--start/notification link-->
+			  <img src="imgs/girl.png" class="rounded-circle img-fluid">
+			  <a href="#"> Notification Name</a><!---->
+			  <p>The standard Lorem Ipsum passage, used since the 1500s</p>
+		  </a><!--end of noti-->
+	  <div class="dropdown-divider"></div><!--separate noti-->
+          <a class="dropdown-item " href="#"><!--start/notification link-->
+			  <img src="imgs/girl.png" class="rounded-circle img-fluid">
+			  <a href="#"> Notification Name</a><!---->
+			  <p>The standard Lorem Ipsum passage, used since the 1500s</p>
+		  </a><!--end of noti-->
+        
+			 
+		 </div>
+        </li>
+		  
+		 <!--exist=log in refers to settings-->
+         <li class="nav-item dropdown" >
+        	<a class="nav-link dropdown-toggle" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <i class="fas fa-ellipsis-h"></i>
+			 </a>
+        
+	    <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+          <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
+		  <a class="dropdown-item" href="#"><i class="fas fa-wrench mr-3"></i>Help</a>
+          <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt mr-2"></i>Log out</a>
+        </div>
+        </li>
+		  
+		<!--sign in/ sign out--> 
+		<li class="nav-item" style="display:none">
+        	
+             <ul class="nav navbar-nav navbar-right ml-auto">			
+			     <li class="nav-item" >
+				    <a data-toggle="dropdown" class="nav-link dropdown-toggle " href="#">sign in/sign up</a>
+					 
+				<!--login form-->					
+					 <ul class="dropdown-menu form-wrapper dropdown-menu-right col-4">
+					    <li>
+						  <form action="action.php" method="post">
+							<p class="hint-text">Sign in with your social media account</p>
+							<div class="form-group social-btn clearfix"><!--log in with social media-->
+								<a href="#" class="btn btn-primary pull-left"><i class="fab fa-facebook-f"></i> </a><!--facebook -->
+								<a href="#" class="btn btn-primary pull-right"><i class="fab fa-twitter"></i> </a><!--twitter-->
+							</div>
+							<div class="or-seperator"><b>or</b></div><!--log in with email and password-->
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Username" required="required"><!--email feild-->
+							</div>
+							<div class="form-group"><!--password feild-->
+								<input type="password" class="form-control" placeholder="Password" required="required">
+							</div>
+							<input type="submit" class="btn btn-primary btn-block" value="Login">
+							<!--sign up form link-->
+							<a href="#" class="btn btn-primary btn-block ">sign up</a>
+							<div class="form-footer">
+								<a href="#">Forgot Your password?</a><!--forgot password-->
+							</div>
+						</form>
+					</li>
+				</ul>  
+		  
+		  
+     </ul>
+    
+  </div>
+</nav>
+	
+<!----------------------------------------------------------------------------------------->	
+<!-- navigation2 -->
+                <div class="container nav2"> <!--nav with circles container-->
+                    <div class="row ">
+						<!--start of item of nav 2 ---------------------->
+                        <div class="col-lg center-block text-center">
+                            <div class="btn-group ">
+                                <a data-toggle="dropdown " href="#"> <!--dropdown icon-->
+			                        <img src="imgs/girl.png" class="rounded-circle"><br><h5>Kids</h5>
+                                </a>
+								<!--dropdown first tab-->
+                                <ul class="dropdown-menu drop-menu " role="menu" aria-labelledby="dropdownMenu">
+									<!--dropdown without sub menu-->
+                                    <li class="d-none d-lg-block ">
+										<a class="dropdown-item" href="#">levelaa 1</a>
+									</li>
+                                    <li class="d-none d-lg-block ">
+										<a class="dropdown-item" href="#">level 1</a>
+									</li>
+                                    <li class="d-none d-lg-block ">
+										<a class="dropdown-item" href="#">level 1</a>
+									</li>
+                                    <li class="d-none d-lg-block ">
+										<a class="dropdown-item" href="#">level 1</a>
+									</li>
+                                    <!--dropdown with sub menu-->
+									<li class="dropdown-submenu sub-menu d-none d-lg-block" >
+                                        <!--basic element leads to sub menu-->
+										<a class="dropdown-item" tabindex="-1" href="#">
+                                            level 1
+                                        </a>
+										   <!--ul for sub menu-->
+                                        <ul class="dropdown-menu drop-menu">
+                                            <li><!--items of sub menu-->
+												<a class="dropdown-item" tabindex="-1" href="#">level 2</a>
+											</li>
+											   <!--items sub menu contain second sub menu-->
+                                            <li class="dropdown-submenu sub-menu">
+                                                <a class="dropdown-item" href="#">
+                                                    level 2
+                                                </a>
+												  <!--ul of second sub menu-->
+                                                <ul class="dropdown-menu drop-menu">
+                                                    <li><!--items of  second sub menu-->
+														<a class="dropdown-item" href="#">3rd level</a>
+													</li>
+                                                    <li><!--items of  second sub menu-->
+														<a class="dropdown-item" href="#">3rd level</a>
+													</li><!--end of second sub menu-->
+                                                </ul>
+                                            </li>
+                                            <li class="d-none d-lg-block ">
+												<a class="dropdown-item" href="#">level 2</a>
+											</li>
+                                            <li class="d-none d-lg-block ">
+												<a class="dropdown-item" href="#">level 2</a>
+											</li>
+                                        </ul>
+                                    </li>
+									<li class="d-none d-lg-block ">
+										<a class="dropdown-item" href="#">level 1</a>
+									</li>
+                                    <li class="d-none d-lg-block ">
+										<a class="dropdown-item" href="#">level 1</a>
+									</li>
+                                </ul>
+                            </div>
+                        </div>
+						<!--end of item-------------------------------------->
+						<!--start of item of nav 2 ---------------------->
+                        <div class="col-lg center-block text-center">
+                            <div class="btn-group">
+                                <a data-toggle="dropdown" href="#"> <!--dropdown icon-->
+			                        <img src="imgs/2.png" class="rounded-circle"><br><h5>Kids</h5>
+                                </a>
+								<!--dropdown first tab-->
+                                <ul class="dropdown-menu drop-menu" role="menu" aria-labelledby="dropdownMenu">
+									<!--dropdown without sub menu-->
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <!--dropdown with sub menu-->
+									<li class="dropdown-submenu sub-menu">
+                                        <!--basic element leads to sub menu-->
+										<a class="dropdown-item" tabindex="-1" href="#">
+                                            level 1
+                                        </a>
+										   <!--ul for sub menu-->
+                                        <ul class="dropdown-menu drop-menu">
+                                            <li><!--items of sub menu-->
+												<a class="dropdown-item" tabindex="-1" href="#">level 2</a>
+											</li>
+											   <!--items sub menu contain second sub menu-->
+                                            <li class="dropdown-submenu sub-menu">
+                                                <a class="dropdown-item" href="#">
+                                                    level 2
+                                                </a>
+												  <!--ul of second sub menu-->
+                                                <ul class="dropdown-menu drop-menu">
+                                                    <li><!--items of  second sub menu-->
+														<a class="dropdown-item" href="#">3rd level</a>
+													</li>
+                                                    <li><!--items of  second sub menu-->
+														<a class="dropdown-item" href="#">3rd level</a>
+													</li><!--end of second sub menu-->
+                                                </ul>
+                                            </li>
+                                            <li>
+												<a class="dropdown-item" href="#">level 2</a>
+											</li>
+                                            <li>
+												<a class="dropdown-item" href="#">level 2</a>
+											</li>
+                                        </ul>
+                                    </li>
+									<li>
+										<a class="dropdown-item" href="#">level 1</a>
+									</li>
+                                    <li>
+										<a class="dropdown-item" href="#">level 1</a>
+									</li>
+                                </ul>
+                            </div>
+                        </div>
+						<!--end of item---------->
+						<!--start of item of nav 2 ---------------------->
+                        <div class="col-lg center-block text-center">
+                            <div class="btn-group">
+                                <a data-toggle="dropdown" href="#"> <!--dropdown icon-->
+			                        <img src="imgs/3.png" class="rounded-circle"><br><h5>Kids</h5>
+                                </a>
+								<!--dropdown first tab-->
+                                <ul class="dropdown-menu drop-menu" role="menu" aria-labelledby="dropdownMenu">
+									<!--dropdown without sub menu-->
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <!--dropdown with sub menu-->
+									<li class="dropdown-submenu sub-menu">
+                                        <!--basic element leads to sub menu-->
+										<a class="dropdown-item" tabindex="-1" href="#">
+                                            level 1
+                                        </a>
+										   <!--ul for sub menu-->
+                                        <ul class="dropdown-menu drop-menu">
+                                            <li><!--items of sub menu-->
+												<a class="dropdown-item" tabindex="-1" href="#">level 2</a>
+											</li>
+											   <!--items sub menu contain second sub menu-->
+                                            <li class="dropdown-submenu sub-menu">
+                                                <a class="dropdown-item" href="#">
+                                                    level 2
+                                                </a>
+												  <!--ul of second sub menu-->
+                                                <ul class="dropdown-menu drop-menu">
+                                                    <li><!--items of  second sub menu-->
+														<a class="dropdown-item" href="#">3rd level</a>
+													</li>
+                                                    <li><!--items of  second sub menu-->
+														<a class="dropdown-item" href="#">3rd level</a>
+													</li><!--end of second sub menu-->
+                                                </ul>
+                                            </li>
+                                            <li>
+												<a class="dropdown-item" href="#">level 2</a>
+											</li>
+                                            <li>
+												<a class="dropdown-item" href="#">level 2</a>
+											</li>
+                                        </ul>
+                                    </li>
+									<li>
+										<a class="dropdown-item" href="#">level 1</a>
+									</li>
+                                    <li>
+										<a class="dropdown-item" href="#">level 1</a>
+									</li>
+                                </ul>
+                            </div>
+                        </div>
+						<!--end of item---------->
+						<!--start of item of nav 2 ---------------------->
+                        <div class="col-lg center-block text-center">
+                            <div class="btn-group">
+                                <a data-toggle="dropdown" href="#"> <!--dropdown icon-->
+			                        <img src="imgs/4.png" class="rounded-circle"><br><h5>Kids</h5>
+                                </a>
+								<!--dropdown first tab-->
+                                <ul class="dropdown-menu drop-menu" role="menu" aria-labelledby="dropdownMenu">
+									<!--dropdown without sub menu-->
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <!--dropdown with sub menu-->
+									<li class="dropdown-submenu sub-menu">
+                                        <!--basic element leads to sub menu-->
+										<a class="dropdown-item" tabindex="-1" href="#">
+                                            level 1
+                                        </a>
+										   <!--ul for sub menu-->
+                                        <ul class="dropdown-menu drop-menu">
+                                            <li><!--items of sub menu-->
+												<a class="dropdown-item" tabindex="-1" href="#">level 2</a>
+											</li>
+											   <!--items sub menu contain second sub menu-->
+                                            <li class="dropdown-submenu sub-menu">
+                                                <a class="dropdown-item" href="#">
+                                                    level 2
+                                                </a>
+												  <!--ul of second sub menu-->
+                                                <ul class="dropdown-menu drop-menu">
+                                                    <li><!--items of  second sub menu-->
+														<a class="dropdown-item" href="#">3rd level</a>
+													</li>
+                                                    <li><!--items of  second sub menu-->
+														<a class="dropdown-item" href="#">3rd level</a>
+													</li><!--end of second sub menu-->
+                                                </ul>
+                                            </li>
+                                            <li>
+												<a class="dropdown-item" href="#">level 2</a>
+											</li>
+                                            <li>
+												<a class="dropdown-item" href="#">level 2</a>
+											</li>
+                                        </ul>
+                                    </li>
+									<li>
+										<a class="dropdown-item" href="#">level 1</a>
+									</li>
+                                    <li>
+										<a class="dropdown-item" href="#">level 1</a>
+									</li>
+                                </ul>
+                            </div>
+                        </div>
+						<!--end of item---------->
+						<!--start of item of nav 2 ---------------------->
+                        <div class="col-lg center-block text-center">
+                            <div class="btn-group">
+                                <a data-toggle="dropdown" href="#"> <!--dropdown icon-->
+			                        <img src="imgs/5.png" class="rounded-circle"><br><h5>Kids</h5>
+                                </a>
+								<!--dropdown first tab-->
+                                <ul class="dropdown-menu drop-menu" role="menu" aria-labelledby="dropdownMenu">
+									<!--dropdown without sub menu-->
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <!--dropdown with sub menu-->
+									<li class="dropdown-submenu sub-menu">
+                                        <!--basic element leads to sub menu-->
+										<a class="dropdown-item" tabindex="-1" href="#">
+                                            level 1
+                                        </a>
+										   <!--ul for sub menu-->
+                                        <ul class="dropdown-menu drop-menu">
+                                            <li><!--items of sub menu-->
+												<a class="dropdown-item" tabindex="-1" href="#">level 2</a>
+											</li>
+											   <!--items sub menu contain second sub menu-->
+                                            <li class="dropdown-submenu sub-menu">
+                                                <a class="dropdown-item" href="#">
+                                                    level 2
+                                                </a>
+												  <!--ul of second sub menu-->
+                                                <ul class="dropdown-menu drop-menu">
+                                                    <li><!--items of  second sub menu-->
+														<a class="dropdown-item" href="#">3rd level</a>
+													</li>
+                                                    <li><!--items of  second sub menu-->
+														<a class="dropdown-item" href="#">3rd level</a>
+													</li><!--end of second sub menu-->
+                                                </ul>
+                                            </li>
+                                            <li>
+												<a class="dropdown-item" href="#">level 2</a>
+											</li>
+                                            <li>
+												<a class="dropdown-item" href="#">level 2</a>
+											</li>
+                                        </ul>
+                                    </li>
+									<li>
+										<a class="dropdown-item" href="#">level 1</a>
+									</li>
+                                    <li>
+										<a class="dropdown-item" href="#">level 1</a>
+									</li>
+                                </ul>
+                            </div>
+                        </div>
+						<!--end of item---------->
+						<!--start of item of nav 2 ---------------------->
+                        <div class="col-lg center-block text-center">
+                            <div class="btn-group">
+                                <a data-toggle="dropdown" href="#"> <!--dropdown icon-->
+			                        <img src="imgs/6.png" class="rounded-circle"><br><h5>Kids</h5>
+                                </a>
+								<!--dropdown first tab-->
+                                <ul class="dropdown-menu drop-menu" role="menu" aria-labelledby="dropdownMenu">
+									<!--dropdown without sub menu-->
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <!--dropdown with sub menu-->
+									<li class="dropdown-submenu sub-menu">
+                                        <!--basic element leads to sub menu-->
+										<a class="dropdown-item" tabindex="-1" href="#">
+                                            level 1
+                                        </a>
+										   <!--ul for sub menu-->
+                                        <ul class="dropdown-menu drop-menu">
+                                            <li><!--items of sub menu-->
+												<a class="dropdown-item" tabindex="-1" href="#">level 2</a>
+											</li>
+											   <!--items sub menu contain second sub menu-->
+                                            <li class="dropdown-submenu sub-menu">
+                                                <a class="dropdown-item" href="#">
+                                                    level 2
+                                                </a>
+												  <!--ul of second sub menu-->
+                                                <ul class="dropdown-menu drop-menu">
+                                                    <li><!--items of  second sub menu-->
+														<a class="dropdown-item" href="#">3rd level</a>
+													</li>
+                                                    <li><!--items of  second sub menu-->
+														<a class="dropdown-item" href="#">3rd level</a>
+													</li><!--end of second sub menu-->
+                                                </ul>
+                                            </li>
+                                            <li>
+												<a class="dropdown-item" href="#">level 2</a>
+											</li>
+                                            <li>
+												<a class="dropdown-item" href="#">level 2</a>
+											</li>
+                                        </ul>
+                                    </li>
+									<li>
+										<a class="dropdown-item" href="#">level 1</a>
+									</li>
+                                    <li>
+										<a class="dropdown-item" href="#">level 1</a>
+									</li>
+                                </ul>
+                            </div>
+                        </div>
+						<!--end of item---------->
+						<!--start of item of nav 2 ---------------------->
+                        <div class="col-lg center-block text-center">
+                            <div class="btn-group">
+                                <a data-toggle="dropdown" href="#"> <!--dropdown icon-->
+			                        <img src="imgs/7.png" class="rounded-circle"><br><h5>Kids</h5>
+                                </a>
+								<!--dropdown first tab-->
+                                <ul class="dropdown-menu drop-menu" role="menu" aria-labelledby="dropdownMenu">
+									<!--dropdown without sub menu-->
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <!--dropdown with sub menu-->
+									<li class="dropdown-submenu sub-menu">
+                                        <!--basic element leads to sub menu-->
+										<a class="dropdown-item" tabindex="-1" href="#">
+                                            level 1
+                                        </a>
+										   <!--ul for sub menu-->
+                                        <ul class="dropdown-menu drop-menu">
+                                            <li><!--items of sub menu-->
+												<a class="dropdown-item" tabindex="-1" href="#">level 2</a>
+											</li>
+											   <!--items sub menu contain second sub menu-->
+                                            <li class="dropdown-submenu sub-menu">
+                                                <a class="dropdown-item" href="#">
+                                                    level 2
+                                                </a>
+												  <!--ul of second sub menu-->
+                                                <ul class="dropdown-menu drop-menu">
+                                                    <li><!--items of  second sub menu-->
+														<a class="dropdown-item" href="#">3rd level</a>
+													</li>
+                                                    <li><!--items of  second sub menu-->
+														<a class="dropdown-item" href="#">3rd level</a>
+													</li><!--end of second sub menu-->
+                                                </ul>
+                                            </li>
+                                            <li>
+												<a class="dropdown-item" href="#">level 2</a>
+											</li>
+                                            <li>
+												<a class="dropdown-item" href="#">level 2</a>
+											</li>
+                                        </ul>
+                                    </li>
+									<li>
+										<a class="dropdown-item" href="#">level 1</a>
+									</li>
+                                    <li>
+										<a class="dropdown-item" href="#">level 1</a>
+									</li>
+                                </ul>
+                            </div>
+                        </div>
+						<!--end of item---------->
+						<!--start of item of nav 2 ---------------------->
+                        <div class="col-lg center-block text-center">
+                            <div class="btn-group">
+                                <a data-toggle="dropdown" href="#"> <!--dropdown icon-->
+			                        <img src="imgs/8.png" class="rounded-circle"><br><h5>Kids</h5>
+                                </a>
+								<!--dropdown first tab-->
+                                <ul class="dropdown-menu drop-menu" role="menu" aria-labelledby="dropdownMenu">
+									<!--dropdown without sub menu-->
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <li><a class="dropdown-item" href="#">level 1</a></li>
+                                    <!--dropdown with sub menu-->
+									<li class="dropdown-submenu sub-menu">
+                                        <!--basic element leads to sub menu-->
+										<a class="dropdown-item" tabindex="-1" href="#">
+                                            level 1
+                                        </a>
+										   <!--ul for sub menu-->
+                                        <ul class="dropdown-menu drop-menu">
+                                            <li><!--items of sub menu-->
+												<a class="dropdown-item" tabindex="-1" href="#">level 2</a>
+											</li>
+											   <!--items sub menu contain second sub menu-->
+                                            <li class="dropdown-submenu sub-menu">
+                                                <a class="dropdown-item" href="#">
+                                                    level 2
+                                                </a>
+												  <!--ul of second sub menu-->
+                                                <ul class="dropdown-menu drop-menu">
+                                                    <li><!--items of  second sub menu-->
+														<a class="dropdown-item" href="#">3rd level</a>
+													</li>
+                                                    <li><!--items of  second sub menu-->
+														<a class="dropdown-item" href="#">3rd level</a>
+													</li><!--end of second sub menu-->
+                                                </ul>
+                                            </li>
+                                            <li>
+												<a class="dropdown-item" href="#">level 2</a>
+											</li>
+                                            <li>
+												<a class="dropdown-item" href="#">level 2</a>
+											</li>
+                                        </ul>
+                                    </li>
+									<li>
+										<a class="dropdown-item" href="#">level 1</a>
+									</li>
+                                    <li>
+										<a class="dropdown-item" href="#">level 1</a>
+									</li>
+                                </ul>
+                            </div>
+                        </div>
+						<!--end of item---------->
+                    </div>
+                </div>
+
+	
+	
+<!------------------------------------------------------------------------------------------->	
+ <!-- suggested user -->
+ 
+	<div class="container-fluid user-bg" >
+		<div class="row">
+			<div class="col ">			
+			<h4>Suggested Users</h4><br>
+			
+               </div>
+		</div>
+	<div class="container ">
+		<div class="row">
+	         <!--sugg user card-->
+			<div class="col-md center-block text-center user-card  " >
+				<!--sugg user img-->
+				<img src="imgs/girl.png" class="pic  ">
+				<div >
+					<p class="para"><br><br>
+						<a href="#" style="font-size:26px;">User Name</a>
+						<br>236 Follower, 200 Following<br>
+					</p>
+				</div>
+				<!--follow request-->
+				<button id="follw1">follow</button>
+
+				<!--message-->
+				<button data-toggle="modal" data-target="#exampleModal1">
+					message 
+				</button>
+				<!--messg modal-->
+				<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+					<div class="modal-content">
+					  <div class="w-100 ">
+						<h5 class=" ml-4 mt-3" style="color:#fff;">
+							<img src="imgs/girl.png" class="rounded-circle">
+							<a href="#">user name</a>
+							
+						  </h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					  </div>
+				  <div ><!--message1 section-->
+					  
+                   <form  action="" >
+                        <textarea class="w-100" name="message" placeholder="Type in your message" rows="6" style="margin-bottom:10px;"></textarea>
+                        <button class="btn btn-info" type="submit">send</button>
+                    </form>
+				</div>
+				<!--end of message1 seaction-->
+				  </div>
+				</div>
+			</div>
+			</div>
+	         <!--sugg user card-------------------------------------->
+			<div class="col-md center-block text-center user-card  " >
+				<!--sugg user img-->
+				<img src="imgs/girl.png" class="pic  ">
+				<div >
+					<p class="para"><br><br>
+						<a href="#" style="font-size:26px;">User Name</a>
+						<br>236 Follower, 200 Following<br>
+					</p>
+				</div>
+				<!--follow request-->
+				<button  id="follw1">follow</button>
+
+				<!--message-->
+				<button data-toggle="modal" data-target="#exampleModal2">
+					message 
+				</button>
+				<!--messg modal-->
+				<div class="modal fade mess-modal" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+					<div class="modal-content">
+					  <div class="w-100 bg-success">
+						<h5 class=" ml-4 mt-3  " style="color:#fff;">
+							<img src="imgs/girl.png" class="rounded-circle">
+							<a href="#">user name</a>
+							
+						  </h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					  </div>
+				  <div ><!--message1 section-->
+					  
+                   <form  action="" class="w-100" >
+                        <textarea class="w-100" name="message" placeholder="Type in your message" rows="5" colmn="8" style="margin-bottom:10px;">
+					   </textarea>
+                        <button class="btn btn-info" type="submit">
+							<i class="far fa-paper-plane"></i>
+					   </button>
+                    </form>
+				</div>
+				<!--end of message1 seaction-->
+				  </div>
+				</div>
+			</div>
+			</div>
+			
+	         <!--sugg user card-------------------------------------->
+			<div class="col-md center-block text-center user-card  " >
+				<!--sugg user img-->
+				<img src="imgs/girl.png" class="pic  ">
+				<div >
+					<p class="para"><br><br>
+						<a href="#" style="font-size:26px;">User Name</a>
+						<br>236 Follower, 200 Following<br>
+					</p>
+				</div>
+				<!--follow request-->
+				<button onclick="follFunction()" id="follw1">follow</button>
+
+				<!--message-->
+				<button data-toggle="modal" data-target="#exampleModal3">
+					message 
+				</button>
+				<!--messg modal-->
+				<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+					<div class="modal-content">
+					  <div class="w-100 ">
+						<h5 class=" ml-4 mt-3" style="color:#fff;">
+							<img src="imgs/girl.png" class="rounded-circle">
+							<a href="#">user name</a>
+							
+						  </h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					  </div>
+				  <div ><!--message1 section-->
+					  
+                   <form  action="" >
+                        <textarea class="w-100" name="message" placeholder="Type in your message" rows="6" style="margin-bottom:10px;"></textarea>
+                        <button class="btn btn-info" type="submit">send</button>
+                    </form>
+				</div>
+				<!--end of message1 seaction-->
+				  </div>
+				</div>
+			</div>
+			</div>
+	         <!--sugg user card-------------------------------------->
+			<div class="col-md center-block text-center user-card  " >
+				<!--sugg user img-->
+				<img src="imgs/girl.png" class="pic  ">
+				<div >
+					<p class="para"><br><br>
+						<a href="#" style="font-size:26px;">User Name</a>
+						<br>236 Follower, 200 Following<br>
+					</p>
+				</div>
+				<!--follow request-->
+				<button class="follow">follow</button>
+
+				<!--message-->
+				<button data-toggle="modal" data-target="#exampleModal4">
+					message 
+				</button>
+				<!--messg modal-->
+				<div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+					<div class="modal-content">
+					  <div class="w-100 ">
+						<h5 class=" ml-4 mt-3" style="color:#fff;">
+							<img src="imgs/girl.png" class="rounded-circle">
+							<a href="#">user name</a>
+							
+						  </h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					  </div>
+				  <div ><!--message1 section-->
+					  
+                   <form  action="" >
+                        <textarea class="w-100" name="message" placeholder="Type in your message" rows="6" style="margin-bottom:10px;"></textarea>
+                        <button class="btn btn-info" type="submit">send</button>
+                    </form>
+				</div>
+				<!--end of message1 seaction-->
+				  </div>
+				</div>
+			</div>
+			</div>
+			
+				
+			</div>
+			
+		</div>
+	</div>
+     </div>
+
+	
+	
+	
+<!------------------------------------------------------------------------------->
+		<!--featured-->
+	<div class="container-fluid featured-bg" >
+		<div class="row ">
+			<div class="col mt-3 ml-5">			
+			<h5>featured</h5><br>
+			
+               </div>
+		</div>
+	<div class="container ">	
+	   <div class="row">
+			<div class="owl-carousel owl-theme" id="featured">
+				<!--items-->
+	           <div class="item mr-5 ">	
+		            <img src="imgs/product.png" class="featured-img">
+		            <a href="#">Item Name</a>
+				    <p>t is a long established fact that a</p>
+				</div>
+				<!--end of items--><!--items-->
+	           <div class="item mr-5 ">	
+		            <img src="imgs/product.png" class="featured-img">
+		            <a href="#">Item Name</a>
+				    <p>t is a long established fact that a</p>
+				</div>
+				<!--end of items--><!--items-->
+	           <div class="item mr-5 ">	
+		            <img src="imgs/product.png" class="featured-img">
+		            <a href="#">Item Name</a>
+				    <p>t is a long established fact that a</p>
+				</div>
+				<!--end of items--><!--items-->
+	           <div class="item mr-5 ">	
+		            <img src="imgs/product.png" class="featured-img">
+		            <a href="#">Item Name</a>
+				    <p>t is a long established fact that a</p>
+				</div>
+				<!--end of items--><!--items-->
+	           <div class="item mr-5 ">	
+		            <img src="imgs/product.png" class="featured-img">
+		            <a href="#">Item Name</a>
+				    <p>t is a long established fact that a</p>
+				</div>
+				<!--end of items--><!--items-->
+	           <div class="item mr-5 ">	
+		            <img src="imgs/product.png" class="featured-img">
+		            <a href="#">Item Name</a>
+				    <p>t is a long established fact that a</p>
+				</div>
+				<!--end of items--><!--items-->
+	           <div class="item mr-5 ">	
+		            <img src="imgs/product.png" class="featured-img">
+		            <a href="#">Item Name</a>
+				    <p>t is a long established fact that a</p>
+				</div>
+				<!--end of items--><!--items-->
+	           <div class="item mr-5 ">	
+		            <img src="imgs/product.png" class="featured-img">
+		            <a href="#">Item Name</a>
+				    <p>t is a long established fact that a</p>
+				</div>
+				<!--end of items--><!--items-->
+	           <div class="item mr-5 ">	
+		            <img src="imgs/product.png" class="featured-img">
+		            <a href="#">Item Name</a>
+				    <p>t is a long established fact that a</p>
+				</div>
+				<!--end of items--><!--items-->
+	           <div class="item mr-5 ">	
+		            <img src="imgs/product.png" class="featured-img">
+		            <a href="#">Item Name</a>
+				    <p>t is a long established fact that a</p>
+				</div>
+				<!--end of items-->
+		   </div>
+		</div>
+	</div>
+  </div>
+	
+<!------------------------------------------------------------------------------->
+<!--popular-->
+		<div class="container-fluid mt-5 popular" >
+		<div class="row">
+			<div class="col ml-5">			
+			<h4>popular</h4><br>
+			
+               </div>
+		</div>
+	<div class="container ">	
+	   <div class="row">
+			<div class="owl-carousel owl-theme" id="popular">
+				<!--items-->
+	           <div class="item mr-5 ">	
+		            <img src="imgs/gadgets.png" class="populer-img">
+		            <a href="#">Item Name</a>
+				    <p>20$</p>
+				</div>
+				<!--end of items-->
+				<!--items-->
+	           <div class="item mr-5 ">	
+		            <img src="imgs/gadgets.png" class="populer-img">
+		            <a href="#">Item Name</a>
+				    <p>20$</p>
+				</div>
+				<!--end of items-->
+				<!--items-->
+	           <div class="item mr-5 ">	
+		            <img src="imgs/gadgets.png" class="populer-img">
+		            <a href="#">Item Name</a>
+				    <p>20$</p>
+				</div>
+				<!--end of items-->
+				<!--items-->
+	           <div class="item mr-5 ">	
+		            <img src="imgs/gadgets.png" class="populer-img">
+		            <a href="#">Item Name</a>
+				    <p>20$</p>
+				</div>
+				<!--end of items-->
+				<!--items-->
+	           <div class="item mr-5 ">	
+		            <img src="imgs/gadgets.png" class="populer-img">
+		            <a href="#">Item Name</a>
+				    <p>20$</p>
+				</div>
+				<!--end of items-->
+				<!--items-->
+	           <div class="item mr-5 ">	
+		            <img src="imgs/gadgets.png" class="populer-img">
+		            <a href="#">Item Name</a>
+				    <p>20$</p>
+				</div>
+				<!--end of items-->
+				<!--items-->
+	           <div class="item mr-5 ">	
+		            <img src="imgs/gadgets.png" class="populer-img">
+		            <a href="#">Item Name</a>
+				    <p>20$</p>
+				</div>
+				<!--end of items-->
+				<!--items-->
+	           <div class="item mr-5 ">	
+		            <img src="imgs/gadgets.png" class="populer-img">
+		            <a href="#">Item Name</a>
+				    <p>20$</p>
+				</div>
+				<!--end of items-->
+				<!--items-->
+	           <div class="item mr-5 ">	
+		            <img src="imgs/gadgets.png" class="populer-img">
+		            <a href="#">Item Name</a>
+				    <p>20$</p>
+				</div>
+				<!--end of items-->
+				<!--items-->
+	           <div class="item mr-5 ">	
+		            <img src="imgs/gadgets.png" class="populer-img">
+		            <a href="#">Item Name</a>
+				    <p>20$</p>
+				</div>
+				<!--end of items-->
+				<!--items-->
+	           <div class="item mr-5 ">	
+		            <img src="imgs/gadgets.png" class="populer-img">
+		            <a href="#">Item Name</a>
+				    <p>20$</p>
+				</div>
+				<!--end of items-->
+	           
+		   </div>
+		</div>
+	</div>
+  </div>
+	
+		
+		
+		
+<!------------------------------------------------------------------------------->	
+<!-- new coll -->
+	<div class="container new-coll mt-5 mb-5">
+		<h4>New Collections</h4>
+		<div class="row">
+			<div class="owl-carousel owl-theme" id="collec">
+				
+	<!--items--><div class="item mr-2">
+					<div class="coll-card" >
+								<img src="imgs/new-coll.png" class="top-img img-fluid">
+				    				<div class="coll-inf"><p class="paragraph"><a href="#" id="coll-name">Collection Name</a>
+									<br>by <a href="#" id="coll-user">user name</a> <br> 150 item<br></p>
+									</div>
+							
+						
+				
+				
+					<div class="coll-pics container ">
+						<div class="row  no-gutters">
+						<div class="col-4  ">
+							<a href="#" >
+								<img src="imgs/newCollection3.png" class="h-100">
+							</a>
+						</div>	
+						<div class="col-7 ml-1 ">
+							<a href="#">
+                               <img src="imgs/newCollection2.png"  >	
+							</a>
+						</div>	
+						    
+						</div>
+						<div class="row  no-gutters mt-2 mb-2">
+						<div class="col-7 mr-1 ">
+							<a href="#">
+								<img src="imgs/newCollection2.png" >
+							</a>
+						</div>	
+						<div class="col-4  last-img">
+							<a href="#" class="img_number">+92</a>
+                            <img src="imgs/newCollection3.png" class="h-100">	
+							
+						</div>	
+
+						</div>
+						</div>
+					</div>
+		<!--items--></div>
+	
+	<!--items--><div class="item mr-2">
+					<div class="coll-card" >
+								<img src="imgs/new-coll.png" class="top-img img-fluid">
+				    				<div class="coll-inf"><p class="paragraph"><a href="#" id="coll-name">Collection Name</a>
+									<br>by <a href="#" id="coll-user">user name</a> <br> 150 item<br></p>
+									</div>
+							
+						
+				
+				
+					<div class="coll-pics container ">
+						<div class="row  no-gutters">
+						<div class="col-4  ">
+							<a href="#" >
+								<img src="imgs/newCollection3.png" class="h-100">
+							</a>
+						</div>	
+						<div class="col-7 ml-1 ">
+							<a href="#">
+                               <img src="imgs/newCollection2.png"  >	
+							</a>
+						</div>	
+						    
+						</div>
+						<div class="row  no-gutters mt-2 mb-2">
+						<div class="col-7 mr-1 ">
+							<a href="#">
+								<img src="imgs/newCollection2.png" >
+							</a>
+						</div>	
+						<div class="col-4  last-img">
+							<a href="#" class="img_number">+92</a>
+                            <img src="imgs/newCollection3.png" class="h-100">	
+							
+						</div>	
+
+						</div>
+						</div>
+					</div>
+		<!--items--></div>
+	
+	<!--items--><div class="item mr-2">
+					<div class="coll-card" >
+								<img src="imgs/new-coll.png" class="top-img img-fluid">
+				    				<div class="coll-inf"><p class="paragraph"><a href="#" id="coll-name">Collection Name</a>
+									<br>by <a href="#" id="coll-user">user name</a> <br> 150 item<br></p>
+									</div>
+							
+						
+				
+				
+					<div class="coll-pics container ">
+						<div class="row  no-gutters">
+						<div class="col-4  ">
+							<a href="#" >
+								<img src="imgs/newCollection3.png" class="h-100">
+							</a>
+						</div>	
+						<div class="col-7 ml-1 ">
+							<a href="#">
+                               <img src="imgs/newCollection2.png"  >	
+							</a>
+						</div>	
+						    
+						</div>
+						<div class="row  no-gutters mt-2 mb-2">
+						<div class="col-7 mr-1 ">
+							<a href="#">
+								<img src="imgs/newCollection2.png" >
+							</a>
+						</div>	
+						<div class="col-4  last-img">
+							<a href="#" class="img_number">+92</a>
+                            <img src="imgs/newCollection3.png" class="h-100">	
+							
+						</div>	
+
+						</div>
+						</div>
+					</div>
+		<!--items--></div>
+	
+	<!--items--><div class="item mr-2">
+					<div class="coll-card" >
+								<img src="imgs/new-coll.png" class="top-img img-fluid">
+				    				<div class="coll-inf"><p class="paragraph"><a href="#" id="coll-name">Collection Name</a>
+									<br>by <a href="#" id="coll-user">user name</a> <br> 150 item<br></p>
+									</div>
+							
+						
+				
+				
+					<div class="coll-pics container ">
+						<div class="row  no-gutters">
+						<div class="col-4  ">
+							<a href="#" >
+								<img src="imgs/newCollection3.png" class="h-100">
+							</a>
+						</div>	
+						<div class="col-7 ml-1 ">
+							<a href="#">
+                               <img src="imgs/newCollection2.png"  >	
+							</a>
+						</div>	
+						    
+						</div>
+						<div class="row  no-gutters mt-2 mb-2">
+						<div class="col-7 mr-1 ">
+							<a href="#">
+								<img src="imgs/newCollection2.png" >
+							</a>
+						</div>	
+						<div class="col-4  last-img">
+							<a href="#" class="img_number">+92</a>
+                            <img src="imgs/newCollection3.png" class="h-100">	
+							
+						</div>	
+
+						</div>
+						</div>
+					</div>
+		<!--items--></div>
+	
+	<!--items--><div class="item mr-2">
+					<div class="coll-card" >
+								<img src="imgs/new-coll.png" class="top-img img-fluid">
+				    				<div class="coll-inf"><p class="paragraph"><a href="#" id="coll-name">Collection Name</a>
+									<br>by <a href="#" id="coll-user">user name</a> <br> 150 item<br></p>
+									</div>
+							
+						
+				
+				
+					<div class="coll-pics container ">
+						<div class="row  no-gutters">
+						<div class="col-4  ">
+							<a href="#" >
+								<img src="imgs/newCollection3.png" class="h-100">
+							</a>
+						</div>	
+						<div class="col-7 ml-1 ">
+							<a href="#">
+                               <img src="imgs/newCollection2.png"  >	
+							</a>
+						</div>	
+						    
+						</div>
+						<div class="row  no-gutters mt-2 mb-2">
+						<div class="col-7 mr-1 ">
+							<a href="#">
+								<img src="imgs/newCollection2.png" >
+							</a>
+						</div>	
+						<div class="col-4  last-img">
+							<a href="#" class="img_number">+92</a>
+                            <img src="imgs/newCollection3.png" class="h-100">	
+							
+						</div>	
+
+						</div>
+						</div>
+					</div>
+		<!--items--></div>
+	
+	<!--items--><div class="item mr-2">
+					<div class="coll-card" >
+								<img src="imgs/new-coll.png" class="top-img img-fluid">
+				    				<div class="coll-inf"><p class="paragraph"><a href="#" id="coll-name">Collection Name</a>
+									<br>by <a href="#" id="coll-user">user name</a> <br> 150 item<br></p>
+									</div>
+							
+						
+				
+				
+					<div class="coll-pics container ">
+						<div class="row  no-gutters">
+						<div class="col-4  ">
+							<a href="#" >
+								<img src="imgs/newCollection3.png" class="h-100">
+							</a>
+						</div>	
+						<div class="col-7 ml-1 ">
+							<a href="#">
+                               <img src="imgs/newCollection2.png"  >	
+							</a>
+						</div>	
+						    
+						</div>
+						<div class="row  no-gutters mt-2 mb-2">
+						<div class="col-7 mr-1 ">
+							<a href="#">
+								<img src="imgs/newCollection2.png" >
+							</a>
+						</div>	
+						<div class="col-4  last-img">
+							<a href="#" class="img_number">+92</a>
+                            <img src="imgs/newCollection3.png" class="h-100">	
+							
+						</div>	
+
+						</div>
+						</div>
+					</div>
+		<!--items--></div>
+	
+	<!--items--><div class="item mr-2">
+					<div class="coll-card" >
+								<img src="imgs/new-coll.png" class="top-img img-fluid">
+				    				<div class="coll-inf"><p class="paragraph"><a href="#" id="coll-name">Collection Name</a>
+									<br>by <a href="#" id="coll-user">user name</a> <br> 150 item<br></p>
+									</div>
+							
+						
+				
+				
+					<div class="coll-pics container ">
+						<div class="row  no-gutters">
+						<div class="col-4  ">
+							<a href="#" >
+								<img src="imgs/newCollection3.png" class="h-100">
+							</a>
+						</div>	
+						<div class="col-7 ml-1 ">
+							<a href="#">
+                               <img src="imgs/newCollection2.png"  >	
+							</a>
+						</div>	
+						    
+						</div>
+						<div class="row  no-gutters mt-2 mb-2">
+						<div class="col-7 mr-1 ">
+							<a href="#">
+								<img src="imgs/newCollection2.png" >
+							</a>
+						</div>	
+						<div class="col-4  last-img">
+							<a href="#" class="img_number">+92</a>
+                            <img src="imgs/newCollection3.png" class="h-100">	
+							
+						</div>	
+
+						</div>
+						</div>
+					</div>
+		<!--items--></div>
+	
+				
+
+			</div>
+		</div>
+	</div>
+<!------------------------------------------------------------------------------->
+		
+		
+	<!-- trendy tags -->
+	<div class="container new-coll mt-5 mb-5">
+		<h4>Trendy Tags</h4>
+		<div class="row">
+			<div class="owl-carousel owl-theme" id="trendy">
+				
+	<!--items--><div class="item mr-2 ">
+					<div class="coll-card" >
+								
+				    				<div class="coll-tags px-5 py-3">
+										<a href="#"> #glasses </a>
+										<a href="#"> #fashion </a>
+										<a href="#"> #sun glasses </a></br>
+										<a href="#">#style</a>
+									</div>
+							
+						
+				
+				
+					<div class="coll-pics container ">
+						<div class="row  no-gutters">
+						<div class="col-4  ">
+							<a href="#" >
+								<img src="imgs/best-computer-blue-light-glasses-700x700.jpg" class="h-100">
+							</a>
+						</div>	
+						<div class="col-7 ml-1 ">
+							<a href="#">
+                               <img src="imgs/Peekaboo-cute-sexy-retro-cat-eye-sunglasses-women-small-black-white-2018-triangle-vintage-cheap-sun-6.jpg_640x640-6.jpg" class="h-100" >	
+							</a>
+						</div>	
+						    
+						</div>
+						<div class="row  no-gutters mt-2 mb-5">
+						<div class="col-7 mr-1 ">
+							<a href="#">
+								<img src="imgs/Bamboo-sun-glass-Black-frame-with-Red-mirror-lens_10754406_c6ab751b35fac53ae6d763c89573ffd0.jpg" class="h-75" >
+							</a>
+						</div>	
+						<div class="col-4  last-img">
+							<a href="#" class="img_number">+92</a>
+                            <img src="imgs/Heart-Shaped-sunglasses-woman-Lovely-shades-Sun-Glasses-for-women-candy-color-metal-frame-girl-sunglass.jpg_640x640.jpg" class="h-75 w-100">	
+							
+						</div>	
+
+						</div>
+						</div>
+					</div>
+		<!--items--></div>
+	
+	<!--items--><div class="item mr-2 ">
+					<div class="coll-card" >
+								
+				    				<div class="coll-tags px-5 py-3">
+										<a href="#"> #glasses </a>
+										<a href="#"> #fashion </a>
+										<a href="#"> #sun glasses </a></br>
+										<a href="#">#style</a>
+									</div>
+							
+						
+				
+				
+					<div class="coll-pics container ">
+						<div class="row  no-gutters">
+						<div class="col-4  ">
+							<a href="#" >
+								<img src="imgs/best-computer-blue-light-glasses-700x700.jpg" class="h-100">
+							</a>
+						</div>	
+						<div class="col-7 ml-1 ">
+							<a href="#">
+                               <img src="imgs/Peekaboo-cute-sexy-retro-cat-eye-sunglasses-women-small-black-white-2018-triangle-vintage-cheap-sun-6.jpg_640x640-6.jpg" class="h-100" >	
+							</a>
+						</div>	
+						    
+						</div>
+						<div class="row  no-gutters mt-2 mb-5">
+						<div class="col-7 mr-1 ">
+							<a href="#">
+								<img src="imgs/Bamboo-sun-glass-Black-frame-with-Red-mirror-lens_10754406_c6ab751b35fac53ae6d763c89573ffd0.jpg" class="h-75" >
+							</a>
+						</div>	
+						<div class="col-4  last-img">
+							<a href="#" class="img_number">+92</a>
+                            <img src="imgs/Heart-Shaped-sunglasses-woman-Lovely-shades-Sun-Glasses-for-women-candy-color-metal-frame-girl-sunglass.jpg_640x640.jpg" class="h-75 w-100">	
+							
+						</div>	
+
+						</div>
+						</div>
+					</div>
+		<!--items--></div>
+	
+	<!--items--><div class="item mr-2 ">
+					<div class="coll-card" >
+								
+				    				<div class="coll-tags px-5 py-3">
+										<a href="#"> #glasses </a>
+										<a href="#"> #fashion </a>
+										<a href="#"> #sun glasses </a></br>
+										<a href="#">#style</a>
+									</div>
+							
+						
+				
+				
+					<div class="coll-pics container ">
+						<div class="row  no-gutters">
+						<div class="col-4  ">
+							<a href="#" >
+								<img src="imgs/best-computer-blue-light-glasses-700x700.jpg" class="h-100">
+							</a>
+						</div>	
+						<div class="col-7 ml-1 ">
+							<a href="#">
+                               <img src="imgs/Peekaboo-cute-sexy-retro-cat-eye-sunglasses-women-small-black-white-2018-triangle-vintage-cheap-sun-6.jpg_640x640-6.jpg" class="h-100" >	
+							</a>
+						</div>	
+						    
+						</div>
+						<div class="row  no-gutters mt-2 mb-5">
+						<div class="col-7 mr-1 ">
+							<a href="#">
+								<img src="imgs/Bamboo-sun-glass-Black-frame-with-Red-mirror-lens_10754406_c6ab751b35fac53ae6d763c89573ffd0.jpg" class="h-75" >
+							</a>
+						</div>	
+						<div class="col-4  last-img">
+							<a href="#" class="img_number">+92</a>
+                            <img src="imgs/Heart-Shaped-sunglasses-woman-Lovely-shades-Sun-Glasses-for-women-candy-color-metal-frame-girl-sunglass.jpg_640x640.jpg" class="h-75 w-100">	
+							
+						</div>	
+
+						</div>
+						</div>
+					</div>
+		<!--items--></div>
+	
+	<!--items--><div class="item mr-2 ">
+					<div class="coll-card" >
+								
+				    				<div class="coll-tags px-5 py-3">
+										<a href="#"> #glasses </a>
+										<a href="#"> #fashion </a>
+										<a href="#"> #sun glasses </a></br>
+										<a href="#">#style</a>
+									</div>
+							
+						
+				
+				
+					<div class="coll-pics container ">
+						<div class="row  no-gutters">
+						<div class="col-4  ">
+							<a href="#" >
+								<img src="imgs/best-computer-blue-light-glasses-700x700.jpg" class="h-100">
+							</a>
+						</div>	
+						<div class="col-7 ml-1 ">
+							<a href="#">
+                               <img src="imgs/Peekaboo-cute-sexy-retro-cat-eye-sunglasses-women-small-black-white-2018-triangle-vintage-cheap-sun-6.jpg_640x640-6.jpg" class="h-100" >	
+							</a>
+						</div>	
+						    
+						</div>
+						<div class="row  no-gutters mt-2 mb-5">
+						<div class="col-7 mr-1 ">
+							<a href="#">
+								<img src="imgs/Bamboo-sun-glass-Black-frame-with-Red-mirror-lens_10754406_c6ab751b35fac53ae6d763c89573ffd0.jpg" class="h-75" >
+							</a>
+						</div>	
+						<div class="col-4  last-img">
+							<a href="#" class="img_number">+92</a>
+                            <img src="imgs/Heart-Shaped-sunglasses-woman-Lovely-shades-Sun-Glasses-for-women-candy-color-metal-frame-girl-sunglass.jpg_640x640.jpg" class="h-75 w-100">	
+							
+						</div>	
+
+						</div>
+						</div>
+					</div>
+		<!--items--></div>
+	
+	<!--items--><div class="item mr-2 ">
+					<div class="coll-card" >
+								
+				    				<div class="coll-tags px-5 py-3">
+										<a href="#"> #glasses </a>
+										<a href="#"> #fashion </a>
+										<a href="#"> #sun glasses </a></br>
+										<a href="#">#style</a>
+									</div>
+							
+						
+				
+				
+					<div class="coll-pics container ">
+						<div class="row  no-gutters">
+						<div class="col-4  ">
+							<a href="#" >
+								<img src="imgs/best-computer-blue-light-glasses-700x700.jpg" class="h-100">
+							</a>
+						</div>	
+						<div class="col-7 ml-1 ">
+							<a href="#">
+                               <img src="imgs/Peekaboo-cute-sexy-retro-cat-eye-sunglasses-women-small-black-white-2018-triangle-vintage-cheap-sun-6.jpg_640x640-6.jpg" class="h-100" >	
+							</a>
+						</div>	
+						    
+						</div>
+						<div class="row  no-gutters mt-2 mb-5">
+						<div class="col-7 mr-1 ">
+							<a href="#">
+								<img src="imgs/Bamboo-sun-glass-Black-frame-with-Red-mirror-lens_10754406_c6ab751b35fac53ae6d763c89573ffd0.jpg" class="h-75" >
+							</a>
+						</div>	
+						<div class="col-4  last-img">
+							<a href="#" class="img_number">+92</a>
+                            <img src="imgs/Heart-Shaped-sunglasses-woman-Lovely-shades-Sun-Glasses-for-women-candy-color-metal-frame-girl-sunglass.jpg_640x640.jpg" class="h-75 w-100">	
+							
+						</div>	
+
+						</div>
+						</div>
+					</div>
+		<!--items--></div>
+	
+	<!--items--><div class="item mr-2 ">
+					<div class="coll-card" >
+								
+				    				<div class="coll-tags px-5 py-3">
+										<a href="#"> #glasses </a>
+										<a href="#"> #fashion </a>
+										<a href="#"> #sun glasses </a></br>
+										<a href="#">#style</a>
+									</div>
+							
+						
+				
+				
+					<div class="coll-pics container ">
+						<div class="row  no-gutters">
+						<div class="col-4  ">
+							<a href="#" >
+								<img src="imgs/best-computer-blue-light-glasses-700x700.jpg" class="h-100">
+							</a>
+						</div>	
+						<div class="col-7 ml-1 ">
+							<a href="#">
+                               <img src="imgs/Peekaboo-cute-sexy-retro-cat-eye-sunglasses-women-small-black-white-2018-triangle-vintage-cheap-sun-6.jpg_640x640-6.jpg" class="h-100" >	
+							</a>
+						</div>	
+						    
+						</div>
+						<div class="row  no-gutters mt-2 mb-5">
+						<div class="col-7 mr-1 ">
+							<a href="#">
+								<img src="imgs/Bamboo-sun-glass-Black-frame-with-Red-mirror-lens_10754406_c6ab751b35fac53ae6d763c89573ffd0.jpg" class="h-75" >
+							</a>
+						</div>	
+						<div class="col-4  last-img">
+							<a href="#" class="img_number">+92</a>
+                            <img src="imgs/Heart-Shaped-sunglasses-woman-Lovely-shades-Sun-Glasses-for-women-candy-color-metal-frame-girl-sunglass.jpg_640x640.jpg" class="h-75 w-100">	
+							
+						</div>	
+
+						</div>
+						</div>
+					</div>
+		<!--items--></div>
+	
+	<!--items--><div class="item mr-2 ">
+					<div class="coll-card" >
+								
+				    				<div class="coll-tags px-5 py-3">
+										<a href="#"> #glasses </a>
+										<a href="#"> #fashion </a>
+										<a href="#"> #sun glasses </a></br>
+										<a href="#">#style</a>
+									</div>
+							
+						
+				
+				
+					<div class="coll-pics container ">
+						<div class="row  no-gutters">
+						<div class="col-4  ">
+							<a href="#" >
+								<img src="imgs/best-computer-blue-light-glasses-700x700.jpg" class="h-100">
+							</a>
+						</div>	
+						<div class="col-7 ml-1 ">
+							<a href="#">
+                               <img src="imgs/Peekaboo-cute-sexy-retro-cat-eye-sunglasses-women-small-black-white-2018-triangle-vintage-cheap-sun-6.jpg_640x640-6.jpg" class="h-100" >	
+							</a>
+						</div>	
+						    
+						</div>
+						<div class="row  no-gutters mt-2 mb-5">
+						<div class="col-7 mr-1 ">
+							<a href="#">
+								<img src="imgs/Bamboo-sun-glass-Black-frame-with-Red-mirror-lens_10754406_c6ab751b35fac53ae6d763c89573ffd0.jpg" class="h-75" >
+							</a>
+						</div>	
+						<div class="col-4  last-img">
+							<a href="#" class="img_number">+92</a>
+                            <img src="imgs/Heart-Shaped-sunglasses-woman-Lovely-shades-Sun-Glasses-for-women-candy-color-metal-frame-girl-sunglass.jpg_640x640.jpg" class="h-75 w-100">	
+							
+						</div>	
+
+						</div>
+						</div>
+					</div>
+		<!--items--></div>
+	
+	
+
+			</div>
+		</div>
+	</div>
+	
+		
+		
+		
+<!------------------------------------------------------------------------------->
+		<div class="container-fluid featured-bg" >
+	
+		
+	<!-- new coll -->
+	<div class="container new-coll mt-5">
+		<h4>Trending Stores</h4>
+		<div class="row">
+			<div class="owl-carousel owl-theme" id="trend-store">
+				
+	<!--items--><div class="item mr-2 ">
+					<div class="tren-card bg-light" >
+									<div class="trendy-store">
+										<img src="imgs/amazon_logo-1024x375.jpg" class="w-50 h-75">
+						            </div>
+				    				<div class="tren-inf">
+										<p >
+											<a href="#" id="coll-name">Amazon</a><br>
+									         <a href="#" id="coll-user">www.amazon.com</a>
+										</p>
+									</div>
+							
+						
+				
+				
+					<div class="tren-pics container ">
+						<div class="row  no-gutters">
+						<div class="col-4  ">
+							<a href="#" >
+								<img src="imgs/newCollection3.png" class="h-100">
+							</a>
+						</div>	
+						<div class="col-7 ml-1 ">
+							<a href="#">
+                               <img src="imgs/newCollection2.png"  >	
+							</a>
+						</div>	
+						    
+						</div>
+						<div class="row  no-gutters mt-2 mb-2">
+						<div class="col-7 mr-1 ">
+							<a href="#">
+								<img src="imgs/newCollection2.png" >
+							</a>
+						</div>	
+						<div class="col-4  last-img">
+							<a href="#" class="img_number">+92</a>
+                            <img src="imgs/newCollection3.png" class="h-100">	
+							
+						</div>	
+
+						</div>
+						</div>
+					</div>
+		<!--items--></div>
+	<!--items--><div class="item mr-2">
+					<div class="tren-card" >
+									<div class="trendy-store">
+										<img src="imgs/amazon_logo-1024x375.jpg" class="w-50 h-75">
+						            </div>
+				    				<div class="tren-inf">
+										<p >
+											<a href="#" id="coll-name">Amazon</a><br>
+									         <a href="#" id="coll-user">www.amazon.com</a>
+										</p>
+									</div>
+							
+						
+				
+				
+					<div class="tren-pics container ">
+						<div class="row  no-gutters">
+						<div class="col-4  ">
+							<a href="#" >
+								<img src="imgs/newCollection3.png" class="h-100">
+							</a>
+						</div>	
+						<div class="col-7 ml-1 ">
+							<a href="#">
+                               <img src="imgs/newCollection2.png"  >	
+							</a>
+						</div>	
+						    
+						</div>
+						<div class="row  no-gutters mt-2 mb-2">
+						<div class="col-7 mr-1 ">
+							<a href="#">
+								<img src="imgs/newCollection2.png" >
+							</a>
+						</div>	
+						<div class="col-4  last-img">
+							<a href="#" class="img_number">+92</a>
+                            <img src="imgs/newCollection3.png" class="h-100">	
+							
+						</div>	
+
+						</div>
+						</div>
+					</div>
+		<!--items--></div>
+	<!--items--><div class="item mr-2">
+					<div class="tren-card" >
+									<div class="trendy-store">
+										<img src="imgs/amazon_logo-1024x375.jpg" class="w-50 h-75">
+						            </div>
+				    				<div class="tren-inf">
+										<p >
+											<a href="#" id="coll-name">Amazon</a><br>
+									         <a href="#" id="coll-user">www.amazon.com</a>
+										</p>
+									</div>
+							
+						
+				
+				
+					<div class="tren-pics container ">
+						<div class="row  no-gutters">
+						<div class="col-4  ">
+							<a href="#" >
+								<img src="imgs/newCollection3.png" class="h-100">
+							</a>
+						</div>	
+						<div class="col-7 ml-1 ">
+							<a href="#">
+                               <img src="imgs/newCollection2.png"  >	
+							</a>
+						</div>	
+						    
+						</div>
+						<div class="row  no-gutters mt-2 mb-2">
+						<div class="col-7 mr-1 ">
+							<a href="#">
+								<img src="imgs/newCollection2.png" >
+							</a>
+						</div>	
+						<div class="col-4  last-img">
+							<a href="#" class="img_number">+92</a>
+                            <img src="imgs/newCollection3.png" class="h-100">	
+							
+						</div>	
+
+						</div>
+						</div>
+					</div>
+		<!--items--></div>
+	<!--items--><div class="item mr-2">
+					<div class="tren-card" >
+									<div class="trendy-store">
+										<img src="imgs/amazon_logo-1024x375.jpg" class="w-50 h-75">
+						            </div>
+				    				<div class="tren-inf">
+										<p >
+											<a href="#" id="coll-name">Amazon</a><br>
+									         <a href="#" id="coll-user">www.amazon.com</a>
+										</p>
+									</div>
+							
+						
+				
+				
+					<div class="tren-pics container ">
+						<div class="row  no-gutters">
+						<div class="col-4  ">
+							<a href="#" >
+								<img src="imgs/newCollection3.png" class="h-100">
+							</a>
+						</div>	
+						<div class="col-7 ml-1 ">
+							<a href="#">
+                               <img src="imgs/newCollection2.png"  >	
+							</a>
+						</div>	
+						    
+						</div>
+						<div class="row  no-gutters mt-2 mb-2">
+						<div class="col-7 mr-1 ">
+							<a href="#">
+								<img src="imgs/newCollection2.png" >
+							</a>
+						</div>	
+						<div class="col-4  last-img">
+							<a href="#" class="img_number">+92</a>
+                            <img src="imgs/newCollection3.png" class="h-100">	
+							
+						</div>	
+
+						</div>
+						</div>
+					</div>
+		<!--items--></div>
+	<!--items--><div class="item mr-2">
+					<div class="tren-card" >
+									<div class="trendy-store">
+										<img src="imgs/amazon_logo-1024x375.jpg" class="w-50 h-75">
+						            </div>
+				    				<div class="tren-inf">
+										<p >
+											<a href="#" id="coll-name">Amazon</a><br>
+									         <a href="#" id="coll-user">www.amazon.com</a>
+										</p>
+									</div>
+							
+						
+				
+				
+					<div class="tren-pics container ">
+						<div class="row  no-gutters">
+						<div class="col-4  ">
+							<a href="#" >
+								<img src="imgs/newCollection3.png" class="h-100">
+							</a>
+						</div>	
+						<div class="col-7 ml-1 ">
+							<a href="#">
+                               <img src="imgs/newCollection2.png"  >	
+							</a>
+						</div>	
+						    
+						</div>
+						<div class="row  no-gutters mt-2 mb-2">
+						<div class="col-7 mr-1 ">
+							<a href="#">
+								<img src="imgs/newCollection2.png" >
+							</a>
+						</div>	
+						<div class="col-4  last-img">
+							<a href="#" class="img_number">+92</a>
+                            <img src="imgs/newCollection3.png" class="h-100">	
+							
+						</div>	
+
+						</div>
+						</div>
+					</div>
+		<!--items--></div>
+	<!--items--><div class="item mr-2">
+					<div class="tren-card" >
+									<div class="trendy-store">
+										<img src="imgs/amazon_logo-1024x375.jpg" class="w-50 h-75">
+						            </div>
+				    				<div class="tren-inf">
+										<p >
+											<a href="#" id="coll-name">Amazon</a><br>
+									         <a href="#" id="coll-user">www.amazon.com</a>
+										</p>
+									</div>
+							
+						
+				
+				
+					<div class="tren-pics container ">
+						<div class="row  no-gutters">
+						<div class="col-4  ">
+							<a href="#" >
+								<img src="imgs/newCollection3.png" class="h-100">
+							</a>
+						</div>	
+						<div class="col-7 ml-1 ">
+							<a href="#">
+                               <img src="imgs/newCollection2.png"  >	
+							</a>
+						</div>	
+						    
+						</div>
+						<div class="row  no-gutters mt-2 mb-2">
+						<div class="col-7 mr-1 ">
+							<a href="#">
+								<img src="imgs/newCollection2.png" >
+							</a>
+						</div>	
+						<div class="col-4  last-img">
+							<a href="#" class="img_number">+92</a>
+                            <img src="imgs/newCollection3.png" class="h-100">	
+							
+						</div>	
+
+						</div>
+						</div>
+					</div>
+		<!--items--></div>
+	
+	<!--items--><div class="item mr-2">
+					<div class="tren-card" >
+									<div class="trendy-store">
+										<img src="imgs/amazon_logo-1024x375.jpg" class="w-50 h-75">
+						            </div>
+				    				<div class="tren-inf">
+										<p >
+											<a href="#" id="coll-name">Amazon</a><br>
+									         <a href="#" id="coll-user">www.amazon.com</a>
+										</p>
+									</div>
+							
+						
+				
+				
+					<div class="tren-pics container ">
+						<div class="row  no-gutters">
+						<div class="col-4  ">
+							<a href="#" >
+								<img src="imgs/newCollection3.png" class="h-100">
+							</a>
+						</div>	
+						<div class="col-7 ml-1 ">
+							<a href="#">
+                               <img src="imgs/newCollection2.png"  >	
+							</a>
+						</div>	
+						    
+						</div>
+						<div class="row  no-gutters mt-2 mb-2">
+						<div class="col-7 mr-1 ">
+							<a href="#">
+								<img src="imgs/newCollection2.png" >
+							</a>
+						</div>	
+						<div class="col-4  last-img">
+							<a href="#" class="img_number">+92</a>
+                            <img src="imgs/newCollection3.png" class="h-100">	
+							
+						</div>	
+
+						</div>
+						</div>
+					</div>
+		<!--items--></div>
+	
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+		
+<!------------------------------------------------------------------------------->
+<script src="js/jquery-1.11.3.min.js"></script>       
+<script src="js/jquery.min.js"></script>       
+<script src="js/bootstrap.js"></script>    
+<script src="js/bootstrap.min.js"></script>    
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/popper.min.js"></script>
+		<script src="js/code.js"></script>
+		<script>
+		$.fn.extend({
+    toggleText:function(a,b){
+        if(this.html()==a){this.html(b)}
+        else{this.html(a)}
+    }
+});
+		</script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+
+
+
+
+/* header*/
+@charset "utf-8";
+/* CSS Document */
+*{margin-left: auto !important;
+  margin-right:auto !important;
+   padding: 0;
+  box-sizing: border-box;
+	
+}
+/* to change scrollbar*/ 
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #dedede; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #3c4049; 
+}
+/**************************nav************************/
+/* used to display default styles */
+.butt{background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+	cursor: pointer;
+	border-color:fff;  }
+a{color: #000;}/*change link color*/
+.owl-prev {
+   display: none !important;/*display next prev nav*/
+}
+.owl-next {
+   display: none !important;
+}
+/**************************nav************************/
+/*gives box shadow to nav bar bottom border*/
+.navbar{-webkit-box-shadow: -1px 4px 5px -4px rgba(0,3,51,1);
+        -moz-box-shadow: -1px 4px 5px -4px rgba(0,3,51,1);
+	     box-shadow: -1px 4px 5px -4px rgba(0,3,51,1);
+}
+
+.search-container , .lang-container{border:1px solid #dedede;
+								    border-radius:10px;
+								    height:25px;}
+
+ /*to remove arrow from select*/                 
+.lang-container{-webkit-appearance: none;}
+
+/*to remove arrow from dropdown box*/
+.dropdown-toggle::after {
+    display:none !important;
+}
+
+.dropdown-menu-center{
+  width: 400px;
+  top: 100% !important;
+  right: -20%;
+  left: auto;
+  margin-top: 5% !important;
+margin-right: 0.125rem;
+border-radius: 30px;}
+/***************************nav2 WITH CIRCLES***************************/
+.nav2{margin-top: 10%;}
+a h5{font-family: sans-serif;
+     font-size: 14px; 
+	 color: #333;
+	 opacity: .6;
+       }
+a h5:hover{opacity: 1;}
+
+/*.show:hover+.list-categories{
+  max-height: inherit;
+  opacity: 1;
+}
+
+.list-categories{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  max-height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 300ms ease;
+}*/
+.sub-menu {
+                position: relative;
+            }
+
+            .sub-menu> a:after {
+                content: ">";
+                float: right;
+            }
+
+            .sub-menu>.drop-menu {
+                top: -30 !important;
+                left: -160 !important;
+                margin-top: 0px;
+                margin-left: 0px;
+				position: absolute !important;
+            }
+
+            .sub-menu:hover>.drop-menu {
+                display: block;
+            }	
+
+
+/******************************suggested user*********************/
+.user-bg{
+	background-color:#3c4049;
+	margin-top: 5%;
+	
+}
+.user-bg h4{color:#fff;
+            font-family:monospace;
+	        padding: 20px;
+            }
+.user-card{background-color: #fff;
+           border-radius: 20px;
+	       margin-bottom: 20px;
+            margin-top: 3%;
+	       margin-left: 10px!important;margin-left: 10px!important;
+			position: relative;
+	
+           }
+
+
+.pic{border-radius: 50%;
+	  position:absolute;
+ 	  left:30%;
+	  top:-35%;
+	
+}
+
+.user-card div{border-bottom:1px solid #dedede;
+	           margin-bottom:10px;
+}
+
+.user-card div p{
+	          font-family: sans-serif;
+	          font-size: 12px;            
+              }
+.user-card p a{color: #000;
+	           opacity: .6;
+     			text-decoration: none;
+				
+}
+.user-card p a:hover{opacity: 1;}
+.user-card button{width: 48%;
+     
+	background: none;
+    color: inherit;
+    border: none;
+    padding-bottom: 3%;
+	cursor: pointer;
+	
+     }
+@media screen and (max-width: 765px){
+    	
+	.user-bg h4{color:#fff;
+            font-family:monospace;
+	        padding: 20px;
+            }
+.user-card{background-color: #fff;
+           border-radius: 20px;
+	       margin-bottom: 20px;
+            margin-top: 10% !important;
+	       margin-left: 10px!important;
+	       margin-left: 10px!important;
+			position: relative;
+	
+           }
+
+
+.pic{border-radius: 50%;
+	  position:absolute;
+ 	  left:40%;
+	  top:-35%;
+	
+
+	
+}
+
+/***********************************************************************************/
+.featured-bg{background-color: #eee;}
+.featured-img,.populer-img{border-radius: 10px;}
+p{opacity: .6;font-size: 12px;}
+.popular{border-bottom: 1px solid #dedede;}
+/***********************************************************************************/
+new-coll{margin-bottom: 10%!important;
+	    
+}
+.coll-card{height: auto;
+		 background-color: #eee;
+         margin-right: 5%;
+	     border-radius: 20px;
+			}
+.top-img{position: fixed;
+       border-radius: 50%;
+	   top: 3%;
+	   padding: 0 35% ;
+	  }
+.coll-inf{margin-top: 20%;}
+.coll-inf p{padding: 20% 10%;
+	text-align: center;
+	color: #000;
+}
+.coll-inf p a{
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	opacity: .7;
+}
+.coll-inf p a:hover{
+	opacity: 1;
+}
+.lastimg{position: relative;}
+.img_number{position: absolute;
+top:30%;
+left:30%;
+right:auto;
+color: #000;
+font-weight: bold;
+	opacity: .6;
+}
+.img_number:hover{text-decoration: none;
+			opacity: .8;
+			color:#fff;}
+/*****************************************************************/
+/*trendy store*/
+.trendy-store{background-image: url(../imgs/trendy-store.png);
+	          
+              display: flex;
+              justify-content: flex-end;
+	          position: relative;
+              }
+.trendy-store img{padding-top: 25%; }
+	    
+}
+.tren-card{height: auto;
+		 background-color: #fff;
+         margin-right: 5%;
+	     border-radius: 20px;
+			}
+
+.tren-inf p{padding-top: 10%;
+	text-align: center;
+	color: #000;
+}
+.tren-inf p a{
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	opacity: .7;
+}
+.tren-inf p a:hover{
+	opacity: 1;
+}
+.lastimg{position: relative;filter: grayscale(100%)}
+.img_number{position: absolute;
+top:30%;
+left:30%;
+right:auto;
+color: #fff;
+font-weight: bold;
+	opacity: .6;
+}
+.img_number:hover{text-decoration: none;
+			opacity: .8;
+			color:#fff;}
+
+
+
